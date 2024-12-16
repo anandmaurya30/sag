@@ -1,14 +1,24 @@
+:root {
+    --color-accent: rgb(230, 170, 40);
+  }
+body{
+    background-color: black;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     scrollbar-width: none;
   }
-  
+  .first{
+    position: relative;
+    z-index: 10;
+  }
   .nav {
     position: fixed;
     width: 100%;
-    height: 100px;
+    height: 70px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -30,7 +40,7 @@
   }
   .logo {
     position: fixed;
-    top: 0;
+    top: -2%;
     left: 50%;
     transform: translateX(-50%);
     font-family: "Cosi Times";
@@ -46,7 +56,7 @@
 .content {
     width: 100%;
     height: 100vh;
-    /* background: rgb(231, 231, 231); */
+    background: #fff;
     position: relative;
     display: flex;
     justify-content: center;
@@ -74,7 +84,16 @@
     to {
         transform: rotate(360deg);
     }
+    
 }
+
+.side{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+
   .side img{
     width: 100%;
     height: 100%;
@@ -95,6 +114,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #fff;
 }
 .cube {
     width: 200px;
@@ -139,5 +159,151 @@
     line-height: 100%;
 }
 
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .img-scroll {
+    width: 100%;
+    height: 2000vh;
+  }
+  
+  .active-slide {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: #000;
+    opacity: 0.35;
+    z-index: -1;
+  }
+  
+  .active-slide img {
+    position: absolute;
+    filter: blur (50px);
+    transform: scale(1.125);
+  }
+  .slider {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    transform-style: preserve-3d;
+    perspective: 750px;
+    overflow: hidden;
+  }
+  
+  .slide {
+    position: absolute;
+    width: 400px;
+    height: 500px;
+    overflow: hidden;
+  }
+  
+  .slide-copy p {
+    text-transform: uppercase;
+    text-align: center;
+    font-family: "PP Monument Extended";
+    font-size: 13px;
+    font-weight: bolder;
+    line-height: 150%;
+    color: var(--color-accent);
+  }
+  
+  .slide-copy p#index {
+    font-family: "Basis Grotesque Pro";
+    font-size: 11px;
+    font-weight: 400;
+    margin-bottom: 0.75em;
+  }
+  
+  #slide-1 {
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translateX(-50%) translateY(-50%) translateZ(-22500px);
+    opacity: 0;
+  }
+  
+  #slide-2 {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translateX(-50%) translateY(-50%) translateZ(-20000px);
+    opacity: 0;
+  }
+  
+  #slide-3 {
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translateX(-50%) translateY(-50%) translateZ(-17500px);
+    opacity: 0;
+  }
+  
+  #slide-4 {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translateX(-50%) translateY(-50%) translateZ(-15000px);
+    opacity: 0;
+  }
+  
+  #slide-5 {
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translateX(-50%) translateY(-50%) translateZ(-12500px);
+    opacity: 0;
+  }
+  
+  #slide-6 {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translateX(-50%) translateY(-50%) translateZ(-10000px);
+    opacity: 0;
+  }
+  
+  #slide-7 {
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translateX(-50%) translateY(-50%) translateZ(-7500px);
+    opacity: 0;
+  }
+  
+  #slide-8 {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translateX(-50%) translateY(-50%) translateZ(-5000px);
+    opacity: 0;
+  }
+  
+  #slide-9 {
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translateX(-50%) translateY(-50%) translateZ(-2500px);
+    opacity: 0.5;
+  }
+  
+  #slide-10 {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translateX(-50%) translateY(-50%) translateZ(0px);
+    opacity: 1;
+  }
+.next{
+  height: 100vh;
+  width: 100vw;
+  background-color: white;
+}
 
     
