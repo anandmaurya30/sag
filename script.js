@@ -188,3 +188,29 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+
+// document.getElementById("btn-contact").addEventListener("click", ()=>{
+//   document.body.getElementsByClassName("contact").style.display = "none";
+// })
+
+// document.getElementById("btn-contact").addEventListener("click", () => {
+//   const contactElements = document.body.getElementsByClassName("contact");
+  
+//   for (let element of contactElements) {
+//     element.style.display = "block";
+//   }
+// });
+
+
+document.getElementById("btn-contact").addEventListener("click", () => {
+  const contactElements = document.body.getElementsByClassName("contact");
+  
+  for (let element of contactElements) {
+    // Toggle the display property
+    if (element.style.display === "none" || element.style.display === "") {
+      element.style.display = "flex"; // Show the element
+    } else {
+      element.style.display = "none"; // Hide the element
+    }
+  }
+});

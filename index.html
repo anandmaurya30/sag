@@ -7,10 +7,25 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="contact">
+    <form class="contact-form">
+      <h2>Contact Us</h2>
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Your name" required>
+      
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Your email" required>
+      
+      <label for="message">Message</label>
+      <textarea id="message" name="message" placeholder="Your message" required></textarea>
+      
+      <button type="submit">Send</button>
+    </form>
+  </div>
 <div class="first">
     <div class="nav">
         <div class="items-left">
-          <a href="#">services</a>
+          <a href="#">Services</a>
           <a href="#">Clients</a>
         </div>
         <div class="items-mid">
@@ -19,31 +34,31 @@
           </div>
         <div class="items-right">
           <a href="#">Projects</a>
-          <a href="#">contact</a>
+            <a href="#" id="btn-contact">Contact</a>
         </div>
       </div>
       <div class="logo-container">
-        <h1 class="logo">SP-Alliance</h1>
+        <h1 class="logo">SP-MaxOut</h1>
       </div>
       <div class="container"></div>
       <div class="content">
-        <svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg" class="rotate-animation"> <g clip-path="url(#clip0_116_92)"> <path d="M127.233 110.308C145.856 117.358 170.923 116.073 186.883 107.25L200 100L186.883 92.7498C170.923 83.9274 145.857 82.6428 127.233 89.6916L113.267 94.9781C113.18 94.6967 113.075 94.4251 112.972 94.1516L126.546 88.0321C144.7 79.8479 161.515 61.2149 166.563 43.6907L170.711 29.2888L156.309 33.4367C138.785 38.4842 120.152 55.3 111.967 73.4535L106.057 86.5642C105.784 86.4316 105.511 86.3 105.229 86.1851L110.308 72.7665C117.357 54.1433 116.072 29.0767 107.25 13.1163L100 0L92.7498 13.1167C83.9274 29.0772 82.6428 54.1433 89.6916 72.767L94.7707 86.1856C94.4884 86.3005 94.2154 86.4321 93.9428 86.5646L88.0321 73.4539C79.8479 55.3005 61.2149 38.4846 43.6907 33.4372L29.2888 29.2893L33.4367 43.6912C38.4842 61.2149 55.3 79.8484 73.4535 88.0326L87.0274 94.1521C86.9247 94.4256 86.8191 94.6972 86.733 94.9786L72.7665 89.6921C54.1433 82.6428 29.0767 83.9279 13.1163 92.7502L0 100L13.1167 107.25C29.0772 116.073 54.1433 117.358 72.767 110.308L87.3861 104.775C87.5014 105.027 87.6172 105.28 87.747 105.524L73.454 111.968C55.3005 120.152 38.4847 138.785 33.4372 156.309L29.2893 170.711L43.6912 166.563C61.2149 161.516 79.8484 144.7 88.0326 126.547L94.6656 111.834C94.9107 111.936 95.1651 112.02 95.4172 112.109L89.6921 127.234C82.6428 145.857 83.9279 170.924 92.7502 186.884L100 200.001L107.251 186.884C116.073 170.924 117.358 145.858 110.309 127.234L104.583 112.108C104.835 112.02 105.09 111.936 105.335 111.833L111.968 126.546C120.152 144.7 138.785 161.515 156.309 166.563L170.711 170.711L166.563 156.309C161.516 138.785 144.7 120.152 126.547 111.967L112.253 105.524C112.383 105.28 112.499 105.027 112.614 104.774L127.233 110.308Z" fill="url(#paint0_linear_116_92)"/> </g> <defs> <linearGradient id="paint0_linear_116_92" x1="177" y1="-9.23653e-06" x2="39.4993" y2="152.5" gradientUnits="userSpaceOnUse"> <stop stop-color="#B0B9FF"/> <stop offset="1" stop-color="#E7E9FF"/> </linearGradient> <clipPath id="clip0_116_92"> <rect width="200" height="200" fill="white"/> </clipPath> </defs> </svg>
+       <svg width="200" height="200" class="rotate-animation" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg"> <g clip-path="url(#clip0_105_300)"> <path fill-rule="evenodd" clip-rule="evenodd" d="M188.941 100C192.769 100 196.477 99.4861 200 98.5234C197.199 97.9327 194.295 97.622 191.319 97.622H141.855C133.685 97.622 126.061 95.2811 119.619 91.2334C121.027 82.9896 124.913 75.0866 131.277 68.7229L162.891 37.1094C165.598 34.4024 167.856 31.4169 169.667 28.2452C167.268 29.8079 164.995 31.6416 162.891 33.7463L127.914 68.7229C122.137 74.4999 115.091 78.2351 107.674 79.9285C102.84 73.1033 100 64.7671 100 55.7675V11.0593C100 7.23107 99.4861 3.5229 98.5234 0C97.9327 2.80071 97.622 5.70466 97.622 8.68118L97.622 58.1456C97.622 66.3155 95.2811 73.9388 91.2335 80.3812C82.9897 78.9727 75.0866 75.0865 68.7229 68.7228L37.1094 37.1094C34.4024 34.4024 31.4169 32.1437 28.2452 30.3334C29.8079 32.7315 31.6416 35.0047 33.7463 37.1094L68.7229 72.086C74.4999 77.8631 78.2352 84.9088 79.9285 92.3263C73.1033 97.1596 64.7671 100 55.7675 100H11.0593C7.23105 100 3.52289 100.514 0 101.477C2.80073 102.067 5.70469 102.378 8.68122 102.378H58.1456C66.3156 102.378 73.9388 104.719 80.3812 108.767C78.9727 117.01 75.0866 124.913 68.7229 131.277L37.1094 162.891C34.4025 165.598 32.1438 168.583 30.3335 171.755C32.7316 170.192 35.0047 168.358 37.1094 166.254L72.086 131.277C77.863 125.5 84.9088 121.765 92.3263 120.071C97.1596 126.897 100 135.233 100 144.233V188.941C100 192.769 100.514 196.477 101.477 200C102.067 197.199 102.378 194.295 102.378 191.319V141.854C102.378 133.684 104.719 126.061 108.767 119.619C117.01 121.027 124.913 124.913 131.277 131.277L162.891 162.891C165.598 165.598 168.583 167.856 171.755 169.667C170.192 167.268 168.358 164.995 166.254 162.891L131.277 127.914C125.5 122.137 121.765 115.091 120.072 107.674C126.897 102.84 135.233 100 144.233 100H188.941Z" fill="url(#paint0_linear_105_300)"/> </g> <defs> <linearGradient id="paint0_linear_105_300" x1="100" y1="0" x2="100" y2="200" gradientUnits="userSpaceOnUse"> <stop stop-color="#B8DBFC"/> <stop offset="1" stop-color="#F8FBFE"/> </linearGradient> <clipPath id="clip0_105_300"> <rect width="200" height="200" fill="white"/> </clipPath> </defs> </svg>
        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis quia, omnis quos hic sapiente ea perferendis odit necessitatibus placeat debitis totam veritatis</p>
-       <svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg" class="rotate-animation"> <g clip-path="url(#clip0_104_215)"> <path fill-rule="evenodd" clip-rule="evenodd" d="M100 100C100 100 112.5 66.5265 112.5 42.8571C112.5 19.1878 106.904 0 100 0C93.0964 0 87.5 19.1878 87.5 42.8571C87.5 66.5265 100 100 100 100ZM100 100C100 100 114.831 132.508 131.567 149.245C148.304 165.982 165.829 175.592 170.711 170.711C175.592 165.829 165.982 148.304 149.245 131.567C132.508 114.831 100 100 100 100ZM100 100C100 100 133.474 87.5 157.143 87.5C180.812 87.5 200 93.0964 200 100C200 106.904 180.812 112.5 157.143 112.5C133.474 112.5 100 100 100 100ZM100 100C100 100 67.4918 114.831 50.755 131.567C34.0183 148.304 24.4077 165.829 29.2893 170.711C34.1709 175.592 51.696 165.982 68.4327 149.245C85.1695 132.508 100 100 100 100ZM100 100L100 100C100.028 100.074 112.5 133.5 112.5 157.143C112.5 180.812 106.904 200 100 200C93.0964 200 87.5 180.812 87.5 157.143C87.5 133.474 100 100 100 100ZM100 100C100 100 66.5265 87.5 42.8571 87.5C19.1878 87.5 0 93.0964 0 100C0 106.904 19.1878 112.5 42.8571 112.5C66.5265 112.5 100 100 100 100ZM100 99.9999C100 99.9999 132.508 85.1694 149.245 68.4327C165.982 51.6959 175.592 34.1708 170.711 29.2893C165.829 24.4077 148.304 34.0183 131.567 50.755C114.831 67.4918 100 99.9999 100 99.9999ZM68.4327 50.755C85.1695 67.4918 100 100 100 100C100 100 67.4918 85.1695 50.7551 68.4327C34.0183 51.696 24.4078 34.1709 29.2893 29.2893C34.1709 24.4078 51.696 34.0183 68.4327 50.755Z" fill="url(#paint0_linear_104_215)"/> </g> <defs> <linearGradient id="paint0_linear_104_215" x1="157.5" y1="32" x2="44" y2="147.5" gradientUnits="userSpaceOnUse"> <stop offset="0.0509862" stop-color="#FFB6E1"/> <stop offset="1" stop-color="#FBE3EA"/> </linearGradient> <clipPath id="clip0_104_215"> <rect width="200" height="200" fill="white"/> </clipPath> </defs> </svg>
+   <svg width="200" height="200" class="rotate-animation" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg"> <g clip-path="url(#clip0_105_300)"> <path fill-rule="evenodd" clip-rule="evenodd" d="M188.941 100C192.769 100 196.477 99.4861 200 98.5234C197.199 97.9327 194.295 97.622 191.319 97.622H141.855C133.685 97.622 126.061 95.2811 119.619 91.2334C121.027 82.9896 124.913 75.0866 131.277 68.7229L162.891 37.1094C165.598 34.4024 167.856 31.4169 169.667 28.2452C167.268 29.8079 164.995 31.6416 162.891 33.7463L127.914 68.7229C122.137 74.4999 115.091 78.2351 107.674 79.9285C102.84 73.1033 100 64.7671 100 55.7675V11.0593C100 7.23107 99.4861 3.5229 98.5234 0C97.9327 2.80071 97.622 5.70466 97.622 8.68118L97.622 58.1456C97.622 66.3155 95.2811 73.9388 91.2335 80.3812C82.9897 78.9727 75.0866 75.0865 68.7229 68.7228L37.1094 37.1094C34.4024 34.4024 31.4169 32.1437 28.2452 30.3334C29.8079 32.7315 31.6416 35.0047 33.7463 37.1094L68.7229 72.086C74.4999 77.8631 78.2352 84.9088 79.9285 92.3263C73.1033 97.1596 64.7671 100 55.7675 100H11.0593C7.23105 100 3.52289 100.514 0 101.477C2.80073 102.067 5.70469 102.378 8.68122 102.378H58.1456C66.3156 102.378 73.9388 104.719 80.3812 108.767C78.9727 117.01 75.0866 124.913 68.7229 131.277L37.1094 162.891C34.4025 165.598 32.1438 168.583 30.3335 171.755C32.7316 170.192 35.0047 168.358 37.1094 166.254L72.086 131.277C77.863 125.5 84.9088 121.765 92.3263 120.071C97.1596 126.897 100 135.233 100 144.233V188.941C100 192.769 100.514 196.477 101.477 200C102.067 197.199 102.378 194.295 102.378 191.319V141.854C102.378 133.684 104.719 126.061 108.767 119.619C117.01 121.027 124.913 124.913 131.277 131.277L162.891 162.891C165.598 165.598 168.583 167.856 171.755 169.667C170.192 167.268 168.358 164.995 166.254 162.891L131.277 127.914C125.5 122.137 121.765 115.091 120.072 107.674C126.897 102.84 135.233 100 144.233 100H188.941Z" fill="url(#paint0_linear_105_300)"/> </g> <defs> <linearGradient id="paint0_linear_105_300" x1="100" y1="0" x2="100" y2="200" gradientUnits="userSpaceOnUse"> <stop stop-color="#B8DBFC"/> <stop offset="1" stop-color="#F8FBFE"/> </linearGradient> <clipPath id="clip0_105_300"> <rect width="200" height="200" fill="white"/> </clipPath> </defs> </svg>
       </div>
       <div class="item project-1">
         <div class="cube-container">
             <div class="cube">
-                <div class="side front">NAME 1</div>
+                <div class="side front">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio nemo ullam ipsum porro autem facere voluptatum similique magnam. Fuga, ipsum.</div>
                 <div class="side back">NAME 1</div>
                 <div class="side top">NAME 1</div>
                 <div class="side bottom">NAME 1</div>
             </div>
             <div class="cube" style="left: 50%;">
-                <div class="side front"><img src="./assets/img1.jpg" alt="" /></div>
-                <div class="side back"><img src="./assets/img2.jpg" alt="" /></div>
-                <div class="side top"><img src="./assets/img3.jpg" alt="" /></div>
-                <div class="side bottom"><img src="./assets/img4.jpg" alt="" /></div>
+                <div class="side front"><img src="https://res.cloudinary.com/df2mwumis/image/upload/v1733769546/Learning-Management-System/qvlyhrugze8d6rm5meq5.png" alt="" /></div>
+                <div class="side back"><img src="https://res.cloudinary.com/df2mwumis/image/upload/v1733769546/Learning-Management-System/qvlyhrugze8d6rm5meq5.png" alt="" /></div>
+                <div class="side top"><img src="https://res.cloudinary.com/df2mwumis/image/upload/v1733769546/Learning-Management-System/qvlyhrugze8d6rm5meq5.png" alt="" /></div>
+                <div class="side bottom"><img src="https://res.cloudinary.com/df2mwumis/image/upload/v1733769546/Learning-Management-System/qvlyhrugze8d6rm5meq5.png" alt="" /></div>
             </div>
         </div>
     </div>
@@ -314,6 +329,7 @@
         &copy; 2024 YourCompanyName. All Rights Reserved.
     </div>
 </footer>
+
   <script src="https://cdn.jsdelivr.net/npm/intersection-observer@0.12.2/intersection-observer.min.js"></script>            
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
