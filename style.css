@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 :root {
     --color-accent: rgb(230, 170, 40);
   }
@@ -32,7 +34,8 @@ body{
     text-transform: uppercase;
     color: #1AF0D4;
     padding: 0em 1em;
-    font-family: "HK Guise";
+    font-family: "enso";
+    /* font-family: "Aircruiser 3D"; */
     font-weight: 500;
     font-size: 14px;
     cursor: pointer;
@@ -46,7 +49,10 @@ body{
     left: 50%;
     color: #1AF0D4;
     transform: translateX(-50%);
-    font-family: "Cosi Times";
+    font-family: "Enso";
+    
+    /* font-family: "Monotes"; */
+    letter-spacing: 2px;
     padding: 1em;
     z-index: 1000;
   }
@@ -71,8 +77,13 @@ body{
     width: 100vh;
     font-size: 2rem;
     padding: 2%;
+    font-family: "Corbel";
+
     color: #1AF0D4;
     background: linear-gradient(to right, #1AF0D4, #007BFF);
+    text-shadow: 0 0 0px #1AF0D4,
+    0 0 5px #00b3ff,
+    0 0 10px #1AF0D4;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: text-animation 5s ease-in-out infinite;
@@ -410,6 +421,18 @@ img {
   justify-content: space-between;
   padding: 1em;
 }
+
+
+.service-info p{
+  font-family: Corbel;
+    
+}
+
+.service-info h1{
+  font-family: enso;
+    
+}
+
 .service-img {
   flex: 5;
   width: 100%;
@@ -464,6 +487,12 @@ html.lenis body {
 
 .footer-section h3 {
   margin-bottom: 15px;
+  font-family: "enso";
+}
+
+.footer-section p {
+  margin-bottom: 15px;
+  font-family: "corbel";
 }
 
 .footer-section ul {
@@ -473,10 +502,12 @@ html.lenis body {
 
 .footer-section ul li {
   margin-bottom: 10px;
+  font-family: "corbel";
 }
 
 .footer-section ul li a {
   color: #fff;
+  font-family: "corbel";
   text-decoration: none;
 }
 
@@ -490,6 +521,7 @@ html.lenis body {
   border-top: 1px solid #444;
   margin-top: 20px;
   font-size: 14px;
+  font-family: "corbel";
 }
 
 @media (max-width: 768px) {
@@ -563,164 +595,106 @@ html.lenis body {
 }
 
 
-:root {
-  --color-accent: rgb(230, 170, 40);
-}
-
-body {
-  background-color: black;
-  overflow-x: hidden; /* Prevent horizontal scrolling */
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  scrollbar-width: none;
-}
-
-.first {
-  position: relative;
-  z-index: 10;
+.grow-img {
   width: 100%;
+  height: 100%;
 }
 
-.nav {
-  position: fixed;
-  width: 100%;
-  height: 70px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 clamp(1em, 4vw, 4em); /* Responsive padding */
-  background: #0c0c0cae;
-  backdrop-filter: blur(10px);
-  z-index: 999;
-}
-
-a {
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #1AF0D4;
-  padding: 0 clamp(0.5em, 1vw, 1em); /* Responsive padding */
-  font-family: "HK Guise";
+.service h1 {
+  color: #fff;
+  font-size: clamp(24px, 4vw, 36px);
   font-weight: 500;
-  font-size: clamp(12px, 1.5vw, 14px); /* Responsive font size */
-  cursor: pointer;
 }
 
-/* Rest of the existing styles remain unchanged */
+.service p {
+  color: #fff;
+  font-size: clamp(14px, 2vw, 15px);
+  font-weight: 400;
+  line-height: 150%;
+}   
 
-/* Enhanced responsive rules */
-@media (max-width: 768px) {
-  .content p {
-      width: 90vw; /* More flexible width on mobile */
-      font-size: clamp(1.2rem, 4vw, 2rem); /* Responsive font size */
-      padding: 4%;
-  }
+.services {
+  background: #000;
+  padding: clamp(4em, 8vw, 8em) clamp(1em, 4vw, 2em);
+  display: flex;
+  flex-direction: column;
+}
 
-  .cube-container {
-      width: 90vw;
-      height: 150px;
-  }
+.services-header {
+  width: 100%;
+  display: flex;
+  gap: clamp(2em, 4vw, 4em);
+  flex-direction: column;
+}
 
-  .cube {
-      width: 150px;
-  }
-
-  .cube .side {
-      width: 150px;
-      height: 150px;
-  }
-
-  .cube p {
-      font-size: clamp(24px, 5vw, 40px);
-  }
-
-  .slide {
-      width: 90vw;
-      max-width: 400px;
-      height: auto;
-      aspect-ratio: 4/5;
-  }
-
-  .services {
-      padding: 4em 1em;
-  }
-
+@media (min-width: 768px) {
   .services-header {
-      flex-direction: column;
-      gap: 2em;
+    flex-direction: row;
   }
+}
 
+.services-header .col:nth-child(1) {
+  flex: 2;
+}
+
+.services-header .col:nth-child(2) {
+  flex: 5;
+  padding: 1em;
+}
+
+.service {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  min-height: 150px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 1em 0;
+}
+
+@media (min-width: 768px) {
   .service {
-      flex-direction: column;
-      height: auto;
-      gap: 1em;
+    flex-direction: row;
+    gap: 2em;
+    height: 150px;
+    padding: 0;
   }
+}
 
-  .service-info, .service-img {
-      flex: 1;
-      padding: 0.5em;
-  }
+.service-info {
+  flex: 2;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1em;
+}
 
+.service-info p {
+  font-family: Corbel;
+}
+
+.service-info h1 {
+  font-family: enso;
+}
+
+.service-img {
+  flex: 5;
+  width: 100%;
+  height: 100%;
+  padding: 1em;
+}
+
+.img {
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
   .img {
-      width: 100%;
+    width: 30%;
+    height: 100%;
   }
 }
-
-@media (max-width: 480px) {
-  .nav {
-      padding: 0 1em;
-  }
-
-  .logo {
-      font-size: 1.2rem;
-      padding-top: 15%;
-  }
-
-  .service h1 {
-      font-size: 24px;
-  }
-
-  .service p {
-      font-size: 14px;
-  }
-
-  .footer-section {
-      padding: 0 1em;
-  }
-
-  .contact-form {
-      width: 90%;
-      margin: 0 auto;
-  }
-}
-
-/* Additional responsive breakpoint for larger screens */
-@media (min-width: 1200px) {
-  .content p {
-      width: 80vh;
-      max-width: 1200px;
-  }
-
-  .services {
-      padding: 10em 4em;
-  }
-
-  .footer-container {
-      padding: 0 4em;
-  }
-}
-
-/* Preserve existing animations and other styles */
-.rotate-animation {
-  animation: spin 0.5s linear infinite;
-}
-
-@keyframes spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
-
-/* Keep all other existing styles unchanged */
