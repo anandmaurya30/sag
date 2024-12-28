@@ -227,7 +227,7 @@ document.querySelector('.contact-form form').addEventListener('submit', async (e
   };
 
   try {
-      const response = await fetch('https://sag-hl0n.onrender.com/send-email', {
+      const response = await fetch('https://sag-backend.onrender.com/send-email', {
           method: 'POST',
           headers: {
               'Content-Type': 'application/json',
